@@ -49,7 +49,7 @@ def eliminar_palabra():
     conn = sqlite3.connect("slang_panameno.db")
     cursor = conn.cursor()
     
-    # Eliminar la palabra de la tabla
+    # Eliminar la palabra de la tabl
     cursor.execute("DELETE FROM palabras WHERE palabra = ?", (palabra,))
     
     conn.commit()
